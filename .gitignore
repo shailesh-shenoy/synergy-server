@@ -1,0 +1,4 @@
+# django/python
+*.pyc
+*.swp
+django-env
