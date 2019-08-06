@@ -1,6 +1,0 @@
-{
-  "python.pythonPath": "django-env/bin/python",
-  "python.linting.pylintEnabled": true,
-  "python.formatting.provider": "black",
-  "python.linting.enabled": true
-}
