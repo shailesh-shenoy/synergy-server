@@ -2,3 +2,7 @@
 *.pyc
 *.swp
 django-env
+.vscode
+.directory
+.vscode/settings.json
+.vscode
