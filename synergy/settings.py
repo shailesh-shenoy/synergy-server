@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     "oauth2_provider",
     "social_django",
     "rest_framework_social_oauth2",
-    "accounts",
-    "todo_api",
+    "users",
+    "todos",
 ]
 
 MIDDLEWARE = [
@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 
-
+AUTH_USER_MODEL = "users.User"
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
@@ -136,7 +136,7 @@ AUTHENTICATION_BACKENDS = (
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
-        "oauth2_provider.contrib.rest_framework.OAuth2Authentication",  # django-oauth-toolkit >= 1.0.0
+        "oauth2_provider.contrib.rest_framework.OAuth2Authentication",
         "rest_framework_social_oauth2.authentication.SocialAuthentication",
     ),
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
