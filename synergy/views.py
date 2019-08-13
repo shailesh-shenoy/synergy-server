@@ -11,5 +11,7 @@ def api_root(request):
         {
             "users": reverse("users:user-list", request=request),
             "todos": reverse("todos:todo-list", request=request),
+            "groups": reverse("users:group-list", request=request),
+            "permissions": reverse("users:permission-list", request=request),
         }
     )
